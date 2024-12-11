@@ -26,12 +26,12 @@ const scenes =
         nextScene: [1, 4] // Indices of the next scenes
     },
     { //1
-        text: "As you land in the foyer, the grandfather clocks begin to ring loud as it strikes 9pm. ",
-        options: [
-            { choice: "Inspect the grandfather clock.", message: "The clock's main compartment door is loose." },
-            { choice: "Move into the next room on the right.", message: "You move on into the next room." }
-        ],
-        nextScene: [2, 7] // Next scene choices
+        text: "As you land in the foyer, the grandfather clock begins to ring loud as it strikes 9pm.",
+         options: [
+             { choice: "Inspect the grandfather clock.", message: "The clock's main compartment door is loose." },
+             { choice: "Move into the next room on the right.", message: "You move on into the next room." }
+         ],
+         nextScene: [2, 4] // Indices of the next scenes
     },
     { //2
         text: "You inspect the clock. There doesn't seem to be anything strange about it. You pull the compartment door open, the grandfather clocks begin to ring loud as it strikes 10pm. ",
@@ -87,7 +87,7 @@ const scenes =
             { choice: "You fart.", message: "You accidentally fart and stink up the place. You are now being haunted by the ghost of the castle." },
             { choice: "You Inspect the books.", message: "You go up to the bookshelf and inspect all of the books. You see some familiar, some unfamiliar, and some that look ancient." }
         ],
-        nextScene: [0, 13] // Next scene choices
+        nextScene: [1, 13] // Next scene choices
     },
     
 ];

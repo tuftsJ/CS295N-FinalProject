@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<!--Written by Jeff Tufts 12/7/24-->
+
+<html class="themansion" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="level2theMansion.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="HorrorMystery.css" />
+    <title>The Mansion</title>
+   
+</head>
+<head>
+    <meta charset="utf-8" />
+    <title>Level Two: The Mansion</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand">Horror Mystery Game</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a href="HorrorMystery.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="level1CastleDread.html" class="nav-link">New Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="continueGame.html" class="nav-link">Continue Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="leaderBoard.html" class="nav-link">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="credits.html" class="nav-link">Credits</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <h1 class="mansion">Welcome To The Mansion.</h1>
+    
+    <div class="container">
+        <img class="image" alt="The Mansion" src="mansion (1).jpg" />
+        <div class="levelonetext">
+            <p>
+                <br />
+                <br />
+                <button id="playerNameInput" onclick="getName()">Enter Name</button>
+                <script>
+                    function getName()
+                    {
+                        const playerName = prompt("Please enter your name:");
+                        if (playerName)
+                        {
+                            document.getElementById("playerNameOutput").textContent = playerName;
+                            document.getElementById("playerNameInput").remove();
+                        }
+                    }
+                </script>
+                <br />
+                Player Name: <span id="playerNameOutput"></span>
+                <br />
+            </p>
+            <p>
+                <script>
+                    LevelTwo();
+                </script>
+                <button id="start" onclick="startGame()">Start Game</button>
+                <div id="output"></div><br />
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
